@@ -15,9 +15,7 @@
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
 if [ "$1" = "uninstall" ]; then
-	rm -f /etc/xdg/menus/sparky-ob.menu
-	rm -f /etc/xdg/openbox/sparky-ob-menu.xml
+	rm -f /etc/xdg/openbox/sparky-ob-menu-rescue.xml
 else
-	cp xdg/sparky-ob.menu /etc/xdg/menus/
-	cp xdg/sparky-ob-menu.xml /etc/xdg/openbox/
+	cp xdg/* /etc/xdg/openbox/
 fi
